@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #282828;
+  --white: #ffffff;
+  --yellow: #e6e3c4;
+  --accent: #998431;
+  --gradient: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%),
+    lightgray 0px -98.901px / 100% 142.222% no-repeat, #ededed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black, #282828);
+}
+
+*.dark {
+  color: var(--white);
+}
+
+button {
+  padding: 15px 30px;
+  color: var(--white);
+}
